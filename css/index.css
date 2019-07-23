@@ -1,3 +1,70 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* My Code */
+
 * {    
 	font-size: 16px;
 	box-sizing: border-box;
@@ -7,10 +74,11 @@
 	width: 1000px;
 	height: 100%;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 2%;
   }
 	.navigation {    
 	 display: flex;
+	 justify-content: space-between;
 	 align-items: baseline;
 	 width: 100%;
  }
@@ -19,7 +87,8 @@
 	  flex-direction: row;
 }
 	nav a {    
-	  padding: 35px 75px 35px 0;  
+	  padding: 3.5% 0 3.5% 0;  
+	  margin-right: 23%;
 	  text-decoration: none;    
 	  color: lightgray;
 	  font-weight: bold;
@@ -27,7 +96,7 @@
 
 	}
 	.logo {
-		margin: 20px 0 0 50px;
+		margin-top: 2%;
 		display: flex;
 		justify-content: flex-end;
 	}
@@ -35,57 +104,58 @@
 	  text-align: center;
 	  border-bottom: 2px solid black;
 	  display: flex;
-	
 	}
 
 	.inside-header {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		margin: 50px 0 20px 60px;
+		margin: 15% 0 0 6%;
 	}
 	 
 	h1 {    
-		font-size: 80px; 
+		font-size: 500%; 
     }
 	button {
-	  padding: 5px 45px 5px 45px;
-	  margin: 0 20px 50px 20px;
 	  background: white;
+	  padding: 2% 2% 2% 2%;
+	  margin: 0 19% 0 19%;
+	  border: 1px solid black;
 	}
 	button:hover {
 	  color: white;
-	  font-size: 20px; 
+	  font-size: 125%; 
 	  background: black;
 	}
+	
 	p {
 	  font-family: cursive;
 	}
+	
 	.circle {
 		display: flex;
-		margin: 50px 0 50px 100px;
-		width: 500px;
-		height: 450px;
+		margin: 5% 0 5% 10%;
+		width: 50%;
+		height: 45%;
 	  }
   
 	.first-content {  
 		display: flex;  
-		padding-top: 20px;
-		padding-bottom: 30px;
+		padding-top: 2%;
+		padding-bottom: 3%;
 		margin: 0 auto;
 	  }
 	h3 {
 	  font-family: "Brush Script MT", cursive;
-	  font-size: 25px;
+	  font-size: 156%;
 	}
 	.features {       
-		 width: 450px;    
-		 height: 200px;
+		 width: 45%;    
+		 height: 20%;
 		}
 	.about {        
-		width: 450px;    
-		height: 200px;
-		margin-left: 55px;
+		width: 45%;    
+		height: 20%;
+		margin-left: 11%;
 	  }
 	.middle-img { 
 		width: 100%;
@@ -94,115 +164,137 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		padding: 30px 0 70px 0;    
+		padding: 3% 0 7% 0;    
 		border-bottom: 2px solid black;   
 		margin: 0 auto;
 	}
 	.services {        
-		width: 275px;   
-		height: 200px; 
+		width: 27.5%;   
+		height: 20%; 
 	}
 	.product {    
-		width: 275px;    
-		height: 200px; 
+		width: 27.5%;    
+		height: 20%; 
 	}
 	.vision {    
-		width: 275px;    
-		height: 200px;
+		width: 27.5%;    
+		height: 20%;
 	}
 	.contact {    
-		padding: 35px 0 50px 0;    
+		padding: 3.5% 0 5% 0;    
 	}
 	.copyright {    
-		padding-left: 350px;    
-		padding-bottom: 70px;
+		padding-left: 40%;    
+		padding-bottom: 7%;
 	}
 
-	@media (max-width: 800px) {
-		body {
-			width: 100%;
-			margin: 0 auto;
-		}
-
-		.logo {
-			margin-left: 10%;
-		}
-		.navigation {
-			flex-direction: column-reverse;
-			justify-content: center;
-			align-items: center;
-		}
-		nav a {
-			justify-content: flex-start;
-			padding-left: 5%;
-		}
-		.inside-header {
-			justify-content: center;
-			align-items: center;
-			margin-left: 30%;
-			margin-top: 0%;
-		}
-		.circle {
-			display: none;
-		}
-
-		.copyright {
-			padding-left: 35%;
-		}
-
+@media (max-width: 800px) {
+	body {
+		width: 100%;
+		margin: 0 auto;
 	}
 
-	@media (max-width: 500px) {
-		body {
-			width: 100%;
-			margin: 0 auto;
-		}
-		.logo {
-			margin-right: 5%;
-			margin-bottom: 10%;
-		}
-		.navigation {
-			width: 100%;
-		}
-		nav {
-			flex-direction: column;
-			width: 100%;
-		}
-		nav a {
-			justify-content: center;
-			align-items: center;
-			font-size: 25px;
-			color: gray;
-			padding: 5% 0 5% 0;
-			border-bottom: 1px solid black;
-		}
-		nav a:first-child {
-			border-top: 1px solid black;
-		}
-		.inside-header {
-			width: 100%;
-			margin: 0 auto;
-			justify-content: center;
-			align-items: center;
-		}
-		.first-content {
-			flex-direction: column;
-		}
-		.about {
-			margin-left: 0%;
-		}
-		.second-content {
-			flex-direction: column;
-		}
-		.product {
-			margin-top: 10%;
-		}
-		.vision {
-			margin-top: 10%;
-		}
-		.copyright {
-			padding-left: 30%;
-		}
+	.logo {
+		margin-left: 40%;
 	}
+	.navigation {
+		flex-direction: column-reverse;
+	}
+	nav a {
+		display: flex;
+		margin-right: 20%;
+		margin-top: 5%;
+		font-weight: bold;
+		font-size: 115%;
+		
+	}
+	.inside-header {
+		justify-content: center;
+		align-items: center;
+		margin-left: 30%;
+		margin-top: 10%;
+	}
+	.circle {
+		display: none;
+	}
+	button {
+		margin-bottom: 15%;
+		padding: 2% 15% 2% 15%;
+	}
+
+	.copyright {
+		padding-left: 35%;
+	}
+
+}
+
+@media (max-width: 500px) {
+	body {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.logo {
+		margin-left: 30%;
+		margin-bottom: 5%;
+	}
+	.navigation {
+		width: 100%;
+		margin: 0 auto;
+	}
+	nav {
+		flex-direction: column;
+		width: 100%;
+		margin: 0 auto;
+	}
+	nav a {
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		font-size: 156%;
+		color: gray;
+		padding-bottom: 5%;
+		border-bottom: 1px solid black;
+	}
+	nav a:first-child {
+		padding-top: 5%;
+		border-top: 1px solid black;
+	}
+	.inside-header {
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 10%;
+		justify-content: center;
+		align-items: center;
+	}
+	.first-content {
+		flex-direction: column;
+		width: 100%;
+	}
+	.features {
+		width: 100%;
+	}
+	.about {
+		width: 100%;
+		margin-top: 5%;
+		margin-left: 0;
+	}
+	.second-content {
+		flex-direction: column;
+	}
+	.services {
+		width: 100%;
+	}
+	.product {
+		margin-top: 5%;
+		width: 100%;
+	}
+	.vision {
+		margin-top: 5%;
+		width: 100%;
+	}
+	.copyright {
+		padding-left: 30%;
+	}
+}
 
 
