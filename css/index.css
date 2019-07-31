@@ -63,66 +63,71 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* My Code */
+/* My Code Starts Here */
 
 * {    
-	font-size: 16px;
-	box-sizing: border-box;
-  }
-  
+	font-size: 62.5%;
+}
+
 body { 
-	width: 980px;
-	height: 100%;
+	width: 1000px;
 	margin: 0 auto;
-	padding: 2%;
+}
+
+.container {
+	width: 100%;
 }
 .navigation {    
-	 display: flex;
-	 justify-content: space-between;
-	 width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
+
 nav {
 	display: flex; 
 	flex-direction: row;
 }
-nav a {    
-	padding: 3.5% 0 3.5% 0;  
-	margin: 10% 20% 0 0;
-	text-decoration: none;    
-	color: lightgray;
-	font-weight: bold;
 
-}
-.logo {
+nav a {    
+	padding: 14% 13% 5% 0;  
+	text-decoration: none;    
+	color: gray;
 	display: flex;
-	margin-top: 3%;
-	padding-right: 1%;
 }
+
+.logo {
+	padding: 6% 0 5% 4%;
+	display: flex;
+	justify-content: flex-end;
+}
+
 .header {   
 	text-align: center;
 	border-bottom: 2px solid black;
 	display: flex;
-	padding-bottom: 5%;
+
 }
 
 .inside-header {
 	display: flex;
 	flex-direction: column;
-	margin: 18% 0 0 8%;
+	align-items: center;
+	margin: 12% 0 0 10%;
 }
 	
 h1 {    
-	font-size: 475%; 
+	font-size: 5rem; 
 }
+
 button {
+	padding: 1.5% 10% 1.5% 10%;
+	font-size: 1rem;
+	margin-right: .2%;
 	background: white;
-	padding: 2% 2% 2% 2%;
-	margin: 0 22% 0 22%;
-	border: 1px solid black;
 }
+
 button:hover {
 	color: white;
-	font-size: 125%; 
+	font-size: 2rem; 
 	background: black;
 }
 
@@ -132,170 +137,94 @@ p {
 
 .circle {
 	display: flex;
-	margin: 10% 0 5% 10%;
-	width: 43%;
-	height: 35%;
+	margin: 5% 0 5% 12%;
+	width: 45%;
+	height: 42.5%;
 }
 
 .first-content {  
 	display: flex;  
-	padding-top: 2%;
-	padding-bottom: 3%;
+	margin-top: 10%;
 	margin: 0 auto;
 }
+
 h3 {
 	font-family: "Brush Script MT", cursive;
-	font-size: 156%;
+	font-size: 2rem;
 }
+
 .features {       
 		width: 45%;    
 		height: 20%;
+		margin-top: 5%;
 }
+
 .about {        
 	width: 45%;    
 	height: 20%;
-	margin-left: 11%;
+	margin: 5% 0 0 10%;
 }
+
 .middle-img { 
 	width: 100%;
+	margin: 5% 0 5% 0;
 }
+
 .second-content {    
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	padding: 3% 0 7% 0;    
-	border-bottom: 2px solid black;   
-	margin: 0 auto;
+	justify-content: space-between;  
+	border-bottom: 2px solid black;]
 }
+
 .services {        
 	width: 27.5%;   
 	height: 20%; 
+	margin-bottom: 5%;
 }
+
 .product {    
 	width: 27.5%;    
 	height: 20%; 
 }
+
 .vision {    
 	width: 27.5%;    
 	height: 20%;
 }
+
 .contact {    
 	padding: 3.5% 0 5% 0;    
 }
+
 .copyright {    
-	padding-left: 40%;    
+	padding-left: 37.5%;    
 	padding-bottom: 7%;
 }
 
-@media (max-width: 800px) {
+@media(max-width: 800px) {
 	body {
-		width: 100%;
-		margin: 0 auto;
+		width: 90%;
+	}
+
+	.navigation {
+		flex-direction: column-reverse;
+	}
+
+	nav a {
+		padding: 5% 10% 5% 0;
 	}
 
 	.logo {
-		margin: 0 35% 0 35%;
-		padding-top: 5%;
+		width: 30%;
+		margin-left: 35%;
 	}
-	.navigation {
-		flex-direction: column-reverse;
-		width: 100%;
-	}
-	nav a {
-		margin-right: 10%;
-		margin-top: 5%;
-		font-weight: bold;
-		font-size: 100%;
-	}
-	.inside-header {
-		justify-content: center;
-		align-items: center;
-		margin-left: 30%;
-		margin-top: 5%;
-	}
+
 	.circle {
 		display: none;
 	}
-	button {
-		margin-bottom: 15%;
-		padding: 2% 12% 2% 12%;
-	}
 
-	.copyright {
-		padding-left: 35%;
-	}
-
-}
-
-@media (max-width: 500px) {
-	body {
-		width: 100%;
-		margin: 0 auto;
-	}
-	.logo {
-		margin-left: 35%;
-		margin-bottom: 5%;
-	}
-	.navigation {
-		width: 100%;
-		margin: 0 auto;
-	}
-	nav {
-		flex-direction: column;
-		width: 100%;
-		margin: 0 auto;
-	}
-	nav a {
-		width: 100%;
-		justify-content: center;
-		align-items: center;
-		font-size: 156%;
-		color: gray;
-		padding-bottom: 5%;
-		padding-left: 40%;
-		border-bottom: 1px solid black;
-	}
-	nav a:first-child {
-		padding-top: 5%;
-		border-top: 1px solid black;
-	}
 	.inside-header {
-		width: 100%;
-		margin: 0 auto;
-		padding-top: 10%;
-		justify-content: center;
-		align-items: center;
-	}
-	.first-content {
-		flex-direction: column;
-		width: 100%;
-	}
-	.features {
-		width: 100%;
-	}
-	.about {
-		width: 100%;
-		margin-top: 5%;
-		margin-left: 0;
-	}
-	.second-content {
-		flex-direction: column;
-	}
-	.services {
-		width: 100%;
-	}
-	.product {
-		margin-top: 5%;
-		width: 100%;
-	}
-	.vision {
-		margin-top: 5%;
-		width: 100%;
-	}
-	.copyright {
-		margin-top: 10%;
-		padding-left: 30%;
+		margin: 10% 0 10% 30%;
 	}
 }
-
-
