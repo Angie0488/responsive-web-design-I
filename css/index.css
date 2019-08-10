@@ -1,3 +1,302 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* My Code */
+
+* {    
+	font-size: 16px;
+	box-sizing: border-box;
+  }
+  
+body { 
+	width: 100%;
+	max-width: 980px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 2%;
+}
+.navigation {    
+	 display: flex;
+	 justify-content: space-between;
+	 width: 100%;
+}
+nav {
+	display: flex; 
+	flex-direction: row;
+}
+nav a {   
+	margin: 15% 20% 0 0; 
+	text-decoration: none;    
+	color: lightgray;
+	font-weight: bold;
+
+}
+.logo {
+	display: flex;
+	margin-top: 3%;
+	padding-right: 1%;
+}
+.header {   
+	text-align: center;
+	border-bottom: 2px solid black;
+	display: flex;
+	padding-bottom: 5%;
+}
+
+.inside-header {
+	display: flex;
+	flex-direction: column;
+	margin: 18% 0 0 8%;
+}
+	
+h1 {    
+	font-size: 475%; 
+}
+button {
+	background: white;
+	padding: 2% 2% 2% 2%;
+	margin: 0 22% 0 22%;
+	border: 1px solid black;
+}
+button:hover {
+	color: white;
+	font-size: 125%; 
+	background: black;
+}
+
+p {
+	font-family: cursive;
+}
+
+.circle {
+	display: flex;
+	margin: 10% 0 5% 10%;
+	width: 43%;
+	height: 35%;
+}
+
+.first-content {  
+	display: flex;  
+	padding-top: 2%;
+	padding-bottom: 3%;
+	margin: 0 auto;
+}
+h3 {
+	font-family: "Brush Script MT", cursive;
+	font-size: 156%;
+}
+.features {       
+		width: 45%;    
+		height: 20%;
+}
+.about {        
+	width: 45%;    
+	height: 20%;
+	margin-left: 11%;
+}
+.middle-img { 
+	width: 100%;
+}
+.second-content {    
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 3% 0 7% 0;    
+	border-bottom: 2px solid black;   
+	margin: 0 auto;
+}
+.services {        
+	width: 27.5%;   
+	height: 20%; 
+}
+.product {    
+	width: 27.5%;    
+	height: 20%; 
+}
+.vision {    
+	width: 27.5%;    
+	height: 20%;
+}
+.contact {    
+	padding: 3.5% 0 5% 0;    
+}
+.copyright {    
+	padding-left: 40%;    
+	padding-bottom: 7%;
+}
+
+@media (max-width: 800px) {
+	body {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.logo {
+		margin: 0 35% 0 35%;
+		padding-top: 5%;
+	}
+	.navigation {
+		flex-direction: column-reverse;
+	}
+	nav {
+		justify-content: space-between;
+	}
+	nav a {
+		display: flex;
+		margin: 5% 0;
+		font-weight: bold;
+		font-size: 100%;
+	}
+	.inside-header {
+		justify-content: center;
+		align-items: center;
+		margin-left: 30%;
+		margin-top: 5%;
+	}
+	.circle {
+		display: none;
+	}
+	button {
+		margin-bottom: 15%;
+		padding: 2% 12% 2% 12%;
+	}
+
+	.copyright {
+		padding-left: 35%;
+	}
+
+}
+
+@media (max-width: 500px) {
+	body {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.logo {
+		margin-left: 35%;
+		margin-bottom: 5%;
+	}
+	.navigation {
+		width: 100%;
+		margin: 0 auto;
+	}
+	nav {
+		flex-direction: column;
+		width: 100%;
+		margin: 0 auto;
+	}
+	nav a {
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		font-size: 156%;
+		color: gray;
+		padding-bottom: 5%;
+		border-bottom: 1px solid black;
+	}
+	nav a:first-child {
+		padding-top: 5%;
+		border-top: 1px solid black;
+	}
+	.inside-header {
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 10%;
+		justify-content: center;
+		align-items: center;
+	}
+	.first-content {
+		flex-direction: column;
+		width: 100%;
+	}
+	.features {
+		width: 100%;
+	}
+	.about {
+		width: 100%;
+		margin-top: 5%;
+		margin-left: 0;
+	}
+	.second-content {
+		flex-direction: column;
+	}
+	.services {
+		width: 100%;
+	}
+	.product {
+		margin-top: 5%;
+		width: 100%;
+	}
+	.vision {
+		margin-top: 5%;
+		width: 100%;
+	}
+	.copyright {
+		margin-top: 10%;
+		padding-left: 30%;
+	}
+}
 
 
